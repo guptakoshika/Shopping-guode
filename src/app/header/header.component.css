@@ -2,6 +2,8 @@
     padding: 10px 16px;
     background: #555;
     color: #f1f1f1;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
+    left: 0;
   }

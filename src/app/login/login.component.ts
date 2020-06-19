@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   username;
   password;
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
   onSubmit(){
-    console.log("in submit !!!!!!!!!");
-    console.log(this.username)
+    //TODO: send the username and pasword to backedn for validation.
+    this.router.navigate(['/home']);
   }
 }

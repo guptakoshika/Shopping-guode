@@ -9,7 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
-import { PostFilterPipe } from './post-filter.pipe';
+import { PostFilterPipe } from './Filter/post-filter.pipe';
+import { PostProvider } from './Filter/postProvider';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { PostFilterPipe } from './post-filter.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    PostProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

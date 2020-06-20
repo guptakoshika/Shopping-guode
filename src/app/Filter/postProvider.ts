@@ -10,5 +10,22 @@ export class PostProvider {
     }
 }
 export const posts = [
-        {"id": 1, "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"}
-    ]
+        {"id": 1,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 2,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 3,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 4,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 5,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 6,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 7,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 8,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 9,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 10,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 11,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 12,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 13,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 14,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 15,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 16,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 17,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 18,"src" : "src/assets/Images/burger.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+      ]

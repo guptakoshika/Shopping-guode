@@ -1,7 +1,0 @@
-[
-    {"id": 1, "categoryName" : "Food"},
-    {"id": 2 ,"categoryName" : "HomeDecor"},
-    {"id": 3 ,"categoryName" : "Clothing"},
-    {"id": 4 ,"categoryName" : "Holiday"},
-    {"id": 5 , "categoryName" : "Entertainment"}
-]

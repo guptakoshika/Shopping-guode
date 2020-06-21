@@ -1,12 +1,12 @@
 <div class="container">
     <ul class = "thumbnailList">
         <li *ngFor=" let post of (posts)" >
-          <div class="card">
+          <button class="card">
             <img src="{{post.src}}" alt="Avatar" style="width:100%">
             <div class="container">
               <h4><b>{{post.category}}</b></h4>
             </div>
-          </div>
+          </button>
       </li>
     </ul>
 </div>

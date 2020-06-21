@@ -10,9 +10,12 @@ import { LoginService } from '../services/login.service';
 export class LoginComponent implements OnInit {
   username: string;
   password: string;
+  isAdmin : boolean;
+
   constructor(private router : Router, private loginService : LoginService) { }
 
   ngOnInit() {
+    this.isAdmin = false;
   }
   onSubmit(){
    let crediants = {
@@ -27,6 +30,6 @@ export class LoginComponent implements OnInit {
   }
 
   processError() {
-    //show error in front end 
+    this.isAdmin = true;
   }
 }

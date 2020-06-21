@@ -1,4 +1,8 @@
 <div class="container">
+  <div *ngIf="isAdmin">
+    <h1>You are not Authorized!</h1>
+    <hr>
+    </div>
     <h1>Login!</h1>
     <form (ngSubmit)="onSubmit()">
       <div class="form-group">

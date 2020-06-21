@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
 import { PostFilterPipe } from './Filter/post-filter.pipe';
 import { PostProvider } from './Filter/postProvider';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PostProvider } from './Filter/postProvider';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     PostProvider

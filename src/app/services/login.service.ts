@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class LoginService {
   
-  private baseUrl:string = 'http://localhost:9000';
+  private baseUrl: string = 'http://localhost:9000';
 
   constructor(private httpClient : HttpClient ) {  }
 
@@ -17,6 +17,6 @@ export class LoginService {
    */
   validateUser(credentials : Object) :  Observable<Object> {
     console.log(credentials);
-    return this.httpClient.post(`${this.baseUrl}` + `/validateUser` , credentials);
+    return this.httpClient.post(`${this.baseUrl}` + `/login` , credentials);
   }
 }

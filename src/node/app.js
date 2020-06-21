@@ -14,17 +14,18 @@ app.listen(9000, function (req, res){
 /**
  * used to validation of user.
  * @param req : request form frontend which has user detail as username and password
+ * @param res : for sending response
+ * @param err : for sending error(if any)
  */
 app.post('/login', function(req, res){
-   if(req.body.username === "admin" && req.body.password === "admin123"){
+   if(req.body.username == "admin" && req.body.password == "admin123"){
         result = {
             status : 200,
             messsage : "Authorrized!"
         } 
+        res.send(result);
     }
-   result = {
-       status : 403,
-       messsage : "You are not Authorized to visit!"
-   }
-   res.send(result)
+    return res.status(403).send({
+        message: 'You are not Authorized!'
+     });
 })

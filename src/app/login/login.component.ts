@@ -15,12 +15,18 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit(){
-    //TODO: send the username and pasword to backedn for validation.
    let crediants = {
       username : this.username,
       password : this.password
     }
-    this.loginService.validateUser(crediants).subscribe(data => console.log(data), error => console.log(error));
-    this.router.navigate(['/home']);
+    this.loginService.validateUser(crediants).subscribe(data => this.processResponse(), error => this.processError());
+  }
+
+  processResponse(){
+      this.router.navigate(['/home']);
+  }
+
+  processError() {
+    //show error in front end 
   }
 }

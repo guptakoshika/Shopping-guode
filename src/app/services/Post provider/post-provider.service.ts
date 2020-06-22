@@ -12,7 +12,7 @@ export class PostProviderService {
 
   constructor(private http : HttpClient) { }
  
-  getImages() : Observable<PostsInterface[]> {
+  getPosts() : Observable<PostsInterface[]> {
     return this.http.get<PostsInterface[]>(this.url);
   }
   

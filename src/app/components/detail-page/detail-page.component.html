@@ -1,12 +1,11 @@
-<div class="container">
-    <ul class = "thumbnailList">
-        <li *ngFor=" let post of (posts | postFilter: filterby)" >
-          <button class="card" (click)="navigate(post.id)">
-            <img src="{{post.src}}" >
-            <div class="container">
-              <h4><b>{{post.category | postFilter : filterby}}</b></h4>
-            </div>
-          </button>
-      </li>
-    </ul>
+<div class="detailpage-container">
+  <!--column 1-->
+  <div class ="image-container">
+    <img src = "{{post.src}}" >
+  </div>
+  <!--Column 2-->
+    <div class = "details-container">
+      <h1>{{post.title | uppercase}}</h1>
+      <p>{{post.content}}</p>
+    </div>
 </div>

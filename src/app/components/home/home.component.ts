@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { PostProviderService } from 'src/app/services/Post provider/post-provider.service';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +12,11 @@ export class HomeComponent implements OnInit {
 
   posts = []; 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private postProviderService : PostProviderService) {}
 
   ngOnInit() {
-    
+    this.postProviderService.getPosts().subscribe(data => this.posts = data, 
+      error => console.log(error));
   }
 
   /**

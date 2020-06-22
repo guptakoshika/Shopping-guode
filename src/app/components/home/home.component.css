@@ -30,8 +30,7 @@
     object-fit: contain;
     list-style-type: none;
     margin: 12px;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-
   }
 

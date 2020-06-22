@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { PostProviderService } from 'src/app/services/Post provider/post-provider.service';
 
 @Component({
   selector: 'app-detail-page',
@@ -9,17 +10,18 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class DetailPageComponent implements OnInit {
 
   private selectedId : number; 
-  private posts = [];
-  filterBy: string = 'food';
-  paramName: string = 'category' 
-  constructor(private route : ActivatedRoute) { }
+  private post;
+
+  constructor(private route : ActivatedRoute, private postProvider : PostProviderService) { }
 
   ngOnInit() { 
     this.route.paramMap.subscribe((params : ParamMap) => {
       this.selectedId = parseInt(params.get('id'));
+      console.log(this.selectedId)
     })
-   
-    console.log(this.posts)
+   this.postProvider.getPosts().subscribe(data => {
+     this.post = data.find(p => p.id == this.selectedId);
+   });
+   console.log(this.post);
   }
-
 }

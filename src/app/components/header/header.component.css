@@ -1,5 +1,6 @@
 .header {
-    padding: 10px 16px;
+    display: flex;
+    padding: 0.5%;
     background: #555;
     color: #f1f1f1;
     position: fixed;
@@ -7,7 +8,9 @@
     top: 0;
     left: 0;
   }
-
+.logout-btn {
+  float: right;
+}
 
 button{
   background-color: #555;

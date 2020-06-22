@@ -1,16 +1,13 @@
 .detailpage-container {
     padding-top: 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .image-container, .details-container{
     padding: 2%;
 }
-
-/* .image-container{
-    max-width: 30%;
-} */
 
 .detailpage-container{
     font-size: 150%;

@@ -1,25 +1,29 @@
 <app-header></app-header>
-<p class="intro">Shopping is an activity in which a customer browses the available goods or services presented by one or more retailers with the potential intent to purchase a suitable selection of them. A typology of shopper types has been developed by 
-scholars which identifies one group of shoppers as recreational shoppers,
-that is, those who enjoy shopping and view it as a leisure activity.
-Online shopping has become a major disruptor in the retail industry as consumers 
-can now search for product information and place product orders across different regions. 
-Online retailers deliver their products directly to the consumers' home, offices or wherever 
-they want. The B2C (business to consumer) process has made it easy for consumers to select 
-any product online from a retailer's website and to have it delivered relatively quickly. 
-Using online shopping methods, consumers do not need to consume energy by physically 
-visiting physical stores. This way they save time and the cost of travelling. A retailer 
-or a shop is a business that presents a selection of goods and offers to trade or sell 
-them to customers for money or other goods.</p>
+<div class="intro">
+  <h2> Shopping</h2>
+  <p>Shopping is an activity in which a customer browses the available goods or services presented by one or more retailers with the potential intent to purchase a suitable selection of them. A typology of shopper types has been developed by 
+  scholars which identifies one group of shoppers as recreational shoppers,
+  that is, those who enjoy shopping and view it as a leisure activity.
+  Online shopping has become a major disruptor in the retail industry as consumers 
+  can now search for product information and place product orders across different regions. 
+  Online retailers deliver their products directly to the consumers' home, offices or wherever 
+  they want. The B2C (business to consumer) process has made it easy for consumers to select 
+  any product online from a retailer's website and to have it delivered relatively quickly. 
+  Using online shopping methods, consumers do not need to consume energy by physically 
+  visiting physical stores. This way they save time and the cost of travelling. A retailer 
+  or a shop is a business that presents a selection of goods and offers to trade or sell 
+  them to customers for money or other goods.</p>
+</div>
+
 <div class="homepage-container">
+  <h1>Recent Articles</h1>
     <ul class = "thumbnailList">
         <li *ngFor=" let post of (posts)" >
-          <button class="card" (click)="navigate(post.id)">
-            <img src="{{post.src}}" >
-            <div class="container">
-              <h4><b>{{post.category}}</b></h4>
-            </div>
-          </button>
+          <div>
+            <img src="{{post.src}}" class="image">
+            <h4><b>{{post.title}}</b></h4>
+            <a [routerLink]="['/posts', post.id]"><b>Read More-></b></a>
+          </div>  
       </li>
     </ul>
 </div>

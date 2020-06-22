@@ -9,12 +9,12 @@ import { LoginGuard } from 'src/app/login.guard';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private loginguard : LoginGuard, private router : Router) { }
+  constructor(private loginguard: LoginGuard, private router: Router) { }
 
   ngOnInit() { }
 
-  logout(){
+  logout() {
     this.loginguard.setIsAuthorized(false);
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
 }

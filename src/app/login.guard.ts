@@ -6,10 +6,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginGuard implements CanActivate {
+ private isAuthorized : boolean = false;
+
+  setIsAuthorized(isAuthorizedValue : boolean){
+    this.isAuthorized = isAuthorizedValue;
+  }
+
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
+    return this.isAuthorized;
   }
   
 }

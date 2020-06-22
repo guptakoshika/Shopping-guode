@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
+import { LoginGuard } from '../login.guard';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   password: string;
   isAdmin : boolean;
 
-  constructor(private router : Router, private loginService : LoginService) { }
+  constructor(private router : Router, private loginService : LoginService, private loginGuard: LoginGuard) { }
 
   ngOnInit() {
     this.isAdmin = false;
@@ -26,7 +27,8 @@ export class LoginComponent implements OnInit {
   }
 
   processResponse(){
-      this.router.navigate(['/home']);
+      this.loginGuard.setIsAuthorized(true);
+      this.router.navigate(['/shopping-guide']);
   }
 
   processError() {

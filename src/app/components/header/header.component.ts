@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginGuard } from '../login.guard';
 import { Router } from '@angular/router';
+import { LoginGuard } from 'src/app/login.guard';
 
 @Component({
   selector: 'app-header',

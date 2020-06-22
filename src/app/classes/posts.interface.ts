@@ -1,4 +1,4 @@
-export class posts{
+export interface PostsInterface{
     id : number;
     imageSrc: string;
     title: string;

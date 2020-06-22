@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PostProvider } from '../Filter/postProvider';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,10 +10,10 @@ export class HomeComponent implements OnInit {
 
   posts = []; 
 
-  constructor(private postProvider : PostProvider, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    this.posts = this.postProvider.getcontent();
+    
   }
 
   /**

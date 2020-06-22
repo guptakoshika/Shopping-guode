@@ -1,12 +1,11 @@
 import { TestBed } from '@angular/core/testing';
+import { PostProviderService } from './post-provider.service';
 
-import { LoginService } from './login.service';
-
-describe('LoginService', () => {
+describe('PostProviderService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: LoginService = TestBed.get(LoginService);
+    const service: PostProviderService = TestBed.get(PostProviderService);
     expect(service).toBeTruthy();
   });
 });

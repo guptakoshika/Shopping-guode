@@ -10,7 +10,7 @@ import { PostProviderService } from 'src/app/services/Post provider/post-provide
 })
 export class HomeComponent implements OnInit {
 
-  posts = []; 
+  posts = [];
 
   constructor(private router: Router, private postProviderService : PostProviderService) {}
 
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
    * This funciton is for redirecting to detail page, for the post clciked.
    * @param id : post id which is clicked
    */
-  navigate(id : number){
+  navigate(id: number) {
     this.router.navigate(['/posts', id]);
   }
 }

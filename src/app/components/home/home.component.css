@@ -3,7 +3,6 @@
     margin-top: 100px;
     font-size: large;
     font-family: cursive; 
-    margin-left: em;
 }
 
 .card {
@@ -16,21 +15,19 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  .container {
+  .homepage-container {
     padding: 2px 16px;
-    display: flex;
-    flex: 1;
   }
+
   /* .thumbnailList {
     display: flex;
     flex: 1;
-  } */
+  }  */
    
   li{
-    object-fit: contain;
     list-style-type: none;
-    margin: 12px;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 2%;
   }
 

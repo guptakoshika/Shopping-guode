@@ -1,12 +1,17 @@
 .detailpage-container {
-    padding-top: 5%;
+    padding-top: 0.5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-
+.details-container {
+    display: flex;
+    flex-direction: column;
+    text-justify: auto;
+}
 .image-container, .details-container{
-    padding: 2%;
+    
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .detailpage-container{

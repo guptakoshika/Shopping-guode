@@ -11,4 +11,16 @@ Using online shopping methods, consumers do not need to consume energy by physic
 visiting physical stores. This way they save time and the cost of travelling. A retailer 
 or a shop is a business that presents a selection of goods and offers to trade or sell 
 them to customers for money or other goods.</p>
-<app-card></app-card>
+<div class="container">
+    <ul class = "thumbnailList">
+        <li *ngFor=" let post of (posts)" >
+          <button class="card" (click)="navigate(post.id)">
+            <img src="{{post.src}}" >
+            <div class="container">
+              <h4><b>{{post.category}}</b></h4>
+            </div>
+          </button>
+      </li>
+    </ul>
+</div>
+

@@ -8,10 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { CardComponent } from './card/card.component';
 import { PostFilterPipe } from './Filter/post-filter.pipe';
 import { PostProvider } from './Filter/postProvider';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailPageComponent } from './detail-page/detail-page.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     LoginComponent,
     HomeComponent,
-    CardComponent,
-    PostFilterPipe
+    PostFilterPipe,
+    DetailPageComponent
   ],
   imports: [
     BrowserModule,

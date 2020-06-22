@@ -16,7 +16,6 @@ export class LoginService {
    * @param credentials: data populated from input.
    */
   validateUser(credentials : Object) :  Observable<Object> {
-    console.log(credentials);
     return this.httpClient.post(`${this.baseUrl}` + `/login` , credentials);
   }
 }

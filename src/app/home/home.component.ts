@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PostProvider } from '../Filter/postProvider';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  posts = []; 
 
-  ngOnInit() { }
+  constructor(private postProvider : PostProvider, private router: Router) {}
 
+  ngOnInit() {
+    this.posts = this.postProvider.getcontent();
+  }
+
+  /**
+   * This funciton is for redirecting to detail page, for the post clciked.
+   * @param id : post id which is clicked
+   */
+  navigate(id : number){
+    this.router.navigate(['/posts', id]);
+  }
 }

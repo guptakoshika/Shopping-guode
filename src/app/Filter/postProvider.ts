@@ -10,8 +10,8 @@ export class PostProvider {
     }
 }
 export const posts = [
-        {"id": 1,"src" : "assets/Images/pizza.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
-        {"id": 2,"src" : "assets/Images/food_03.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 1,"src" : "assets/Images/pizza.jpg" , "title" : "Pizza", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
+        {"id": 2,"src" : "assets/Images/food_03.jpg" , "title" : "Samosa", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
         {"id": 3,"src" : "assets/Images/food_03.jpg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
         {"id": 4,"src" : "assets/Images/food_04.jpeg" , "title" : "blah", "content" : "Something", "category" : "Food", "isEditorChoice" : "yes"},
         {"id": 5,"src" : "assets/Images/game_01.jpg" , "title" : "blah", "content" : "Something", "category" : "Sports", "isEditorChoice" : "yes"},

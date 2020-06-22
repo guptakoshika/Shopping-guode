@@ -7,9 +7,7 @@ app.use(cors());
 const bodyParser = require('body-parser');
 app.use(bodyParser.json())
 
-app.listen(9000, function (req, res){
-    console.log("Node is running and is listening to port: 9000")
-});
+app.listen(9000);
 
 /**
  * used to validation of user.

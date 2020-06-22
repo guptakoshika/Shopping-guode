@@ -17,11 +17,9 @@ export class DetailPageComponent implements OnInit {
   ngOnInit() { 
     this.route.paramMap.subscribe((params : ParamMap) => {
       this.selectedId = parseInt(params.get('id'));
-      console.log(this.selectedId)
     })
    this.postProvider.getPosts().subscribe(data => {
      this.post = data.find(p => p.id == this.selectedId);
    });
-   console.log(this.post);
   }
 }

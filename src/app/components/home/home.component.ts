@@ -15,8 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private postProviderService : PostProviderService) {}
 
   ngOnInit() {
-    this.postProviderService.getPosts().subscribe(data => this.posts = data, 
-      error => console.log(error));
+    this.postProviderService.getPosts().subscribe(data => this.posts = data);
   }
 
   /**

@@ -12,8 +12,6 @@ export class PostFilterPipe implements PipeTransform {
  */
  
   transform(posts: any[], filterBy: string, paramName: string): any {
-    console.log("pipe!!!")
-    console.log(filterBy)
     return posts.filter(item => {
       return item.paramName === filterBy;
     });

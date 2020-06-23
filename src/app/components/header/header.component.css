@@ -1,17 +1,21 @@
 .header {
-    display: flex;
-    padding: 0.5%;
-    background: #555;
-    color: #f1f1f1;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0.5%;
+  background: #555;
+  color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   }
-.logout-btn {
-  float: right;
-}
 
-button{
+.logout-btn {
+  justify-content: end;
+  margin-right : 2%;
+  border: none;
   background-color: #555;
+  border: none;
+  color: #f1f1f1;
+  font-size: 150%;
 }

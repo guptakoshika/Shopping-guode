@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "src" : "assets/Images/pizza.jpg" , 
+        "src" : "assets/Images/food_01.jpg" , 
         "title" : "What ever is the question? Answer is always Pizza", 
         "content" : "Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.) which is then baked at a high temperature, traditionally in a wood-fired oven.", 
         "category" : "Food"
@@ -9,29 +9,29 @@
     {
         "id": 2,
         "src" : "assets/Images/food_03.jpg" , 
-        "title" : "Samosa", 
+        "title" : "Samosa - A snack no one can deny!", 
         "content" : "A samosa is a fried or baked pastry with a savoury filling, such as spiced potatoes, onions, peas, cheese, beef and other meats, or lentils. It may take different forms, including triangular, cone, or half-moon shapes, depending on the region. The Indian style, often accompanied by a chutney, is probably the most widely known of a broad family of recipes from Africa to China, which have origins in medieval times or earlier.", 
         "category" : "Food"
     },
     {
         "id": 3,
         "src" : "assets/Images/food_04.jpg" , 
-        "title" : "Chole Bhature", 
+        "title" : "Chole Bhature - Punjabi Style breakFast", 
         "content" : "Chole bhature is a food dish originating from northern India. There is a distinct Punjabi variant of the dish. The dish is also very popular in Pakistan as a breakfast meal. The major difference in Chole Bhature and Halwa Puri is that Halwa Puri is served additionally with Halwa.", 
         "category" : "Food"
     },
     {
         "id": 4,
-        "src" : "assets/Images/game_02.jpg" , 
-        "title" : "blah", 
-        "content" : "Something", 
-        "category" : "Food"
+        "src" : "assets/Images/sports_01.jpg" , 
+        "title" : "Badminton - A game everyone loves!", 
+        "content" : "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are 'singles' (with one player per side) and 'doubles' (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.", 
+        "category" : "Sports"
     },
     {
         "id": 5,
-        "src" : "assets/Images/sports_04.jpg" , 
-        "title" : "blah", 
-        "content" : "Something", 
+        "src" : "assets/Images/sports_02.jpg" , 
+        "title" : "BasketBall - A team Game", 
+        "content" : "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop.",
         "category" : "Sports"
     },
     {

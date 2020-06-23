@@ -1,7 +1,6 @@
 .intro, .homepage-container{
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 10px;
 }
 
 .intro{
@@ -9,6 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   line-height: 2.0;
+  padding-top: 3.5%;
   font-size: large;
   font-family: cursive; 
 }
@@ -38,8 +38,7 @@
 li{
   object-fit: contain;
   list-style-type: none;
-  margin-top: 12px;
-  margin-left: 0px;
+  margin: 12px;
   display: inline-flex;
   justify-content: space-around;
 }

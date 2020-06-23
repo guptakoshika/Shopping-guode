@@ -8,6 +8,7 @@
     flex-direction: column;
     text-justify: auto;
 }
+
 .image-container, .details-container{
     padding-left: 2%;
     padding-right: 2%;

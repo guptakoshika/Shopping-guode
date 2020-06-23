@@ -1,6 +1,7 @@
 .intro, .homepage-container{
   padding-left: 3%;
   padding-right: 3%;
+  padding-top: 10px;
 }
 
 .intro{
@@ -30,14 +31,22 @@
 }
 
 .image {
-width: 800px;
-height: 500px;
+  width: 800px;
+  height: 500px;
 }
  
 li{
   object-fit: contain;
   list-style-type: none;
-  margin: 12px;
+  margin-top: 12px;
+  margin-left: 0px;
   display: inline-flex;
   justify-content: space-around;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .image{
+    width: 100%;
+    height: auto;
+  }
 }

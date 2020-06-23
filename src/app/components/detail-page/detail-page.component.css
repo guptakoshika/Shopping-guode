@@ -9,9 +9,13 @@
     text-justify: auto;
 }
 .image-container, .details-container{
-    
     padding-left: 2%;
     padding-right: 2%;
+}
+
+img{
+    width: 100%;
+    height : auto;
 }
 
 .detailpage-container{

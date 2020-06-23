@@ -2,49 +2,43 @@
     {
         "id": 1,
         "src" : "assets/Images/pizza.jpg" , 
-        "title" : "Pizza", 
+        "title" : "What ever is the question? Answer is always Pizza", 
         "content" : "Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.) which is then baked at a high temperature, traditionally in a wood-fired oven.", 
-        "category" : "Food", 
-        "isEditorChoice" : "yes"
+        "category" : "Food"
     },
     {
         "id": 2,
         "src" : "assets/Images/food_03.jpg" , 
         "title" : "Samosa", 
         "content" : "A samosa is a fried or baked pastry with a savoury filling, such as spiced potatoes, onions, peas, cheese, beef and other meats, or lentils. It may take different forms, including triangular, cone, or half-moon shapes, depending on the region. The Indian style, often accompanied by a chutney, is probably the most widely known of a broad family of recipes from Africa to China, which have origins in medieval times or earlier.", 
-        "category" : "Food", 
-        "isEditorChoice" : "yes"
+        "category" : "Food"
     },
     {
         "id": 3,
-        "src" : "assets/Images/game_01.jpg" , 
+        "src" : "assets/Images/food_04.jpg" , 
         "title" : "Chole Bhature", 
         "content" : "Chole bhature is a food dish originating from northern India. There is a distinct Punjabi variant of the dish. The dish is also very popular in Pakistan as a breakfast meal. The major difference in Chole Bhature and Halwa Puri is that Halwa Puri is served additionally with Halwa.", 
-        "category" : "Food", 
-        "isEditorChoice" : "yes"
+        "category" : "Food"
     },
     {
         "id": 4,
         "src" : "assets/Images/game_02.jpg" , 
         "title" : "blah", 
         "content" : "Something", 
-        "category" : "Food", 
-        "isEditorChoice" : "yes"
+        "category" : "Food"
     },
     {
         "id": 5,
         "src" : "assets/Images/sports_04.jpg" , 
         "title" : "blah", 
         "content" : "Something", 
-        "category" : "Sports", 
-        "isEditorChoice" : "yes"
+        "category" : "Sports"
     },
     {
         "id": 6,
         "src" : "assets/Images/food_02.jpg" , 
-        "title" : "blah", 
+        "title" : "Pasta. white or Red?", 
         "content" : "Something", 
-        "category" : "Sports", 
-        "isEditorChoice" : "yes"
+        "category" : "Sports"
     }
 ]

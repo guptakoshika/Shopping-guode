@@ -8,12 +8,11 @@ import { PostsInterface } from '../../classes/posts.interface';
 })
 export class PostProviderService {
 
-  private url : string = "assets/data/posts.json";
+  private url = 'assets/data/posts.json';
 
-  constructor(private http : HttpClient) { }
- 
-  getPosts() : Observable<PostsInterface[]> {
+  constructor(private http: HttpClient) { }
+
+  getPosts(): Observable<PostsInterface[]> {
     return this.http.get<PostsInterface[]>(this.url);
   }
-  
 }

@@ -9,7 +9,7 @@ import { PostProviderService } from 'src/app/services/Post provider/post-provide
 })
 export class HomeComponent implements OnInit {
 
-  posts = [];
+  private posts = [];
 
   constructor(private router: Router, private postProviderService: PostProviderService) {}
 

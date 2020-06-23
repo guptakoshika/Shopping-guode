@@ -9,9 +9,9 @@ import { LoginGuard } from 'src/app/login.guard';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username: string;
-  password: string;
-  isAdmin: boolean;
+  private username: string;
+  private password: string;
+  private isAdmin: boolean;
 
   constructor(private router: Router, private loginService: LoginService,
               private loginGuard: LoginGuard) { }

@@ -7,16 +7,16 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class LoginService {
-  
-  private baseUrl: string = 'http://localhost:9000';
 
-  constructor(private httpClient : HttpClient ) {  }
+  private baseUrl = 'http://localhost:9000';
+
+  constructor(private httpClient: HttpClient ) {  }
 
   /***
    * This method is used for validation of input after submittion in login form.
    * @param credentials: data populated from input.
    */
-  validateUser(credentials : Object) :  Observable<Object> {
+  validateUser(credentials: object): Observable<object> {
     return this.httpClient.post(`${this.baseUrl}` + `/login` , credentials);
   }
 }

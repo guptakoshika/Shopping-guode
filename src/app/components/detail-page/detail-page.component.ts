@@ -14,6 +14,9 @@ export class DetailPageComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private postProvider: PostProviderService) { }
 
+  /**
+   * Thid method will read post id from url and get posts and filter it accordingly.
+   */
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.selectedId = parseInt( params.get('id'), 10 );
